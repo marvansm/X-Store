@@ -320,6 +320,11 @@ footer {
   background-color: #32373c;
   padding: 0 150px;
 }
+@media (max-width: 768px) {
+  footer {
+    padding: 0 20px;
+  }
+}
 footer .lines {
   border-bottom: 1px solid gray;
   border-top: 1px solid gray;
@@ -329,17 +334,41 @@ footer .services {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  footer .services {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 footer .services .box {
   display: flex;
   align-items: start;
   gap: 25px;
 }
+@media (max-width: 768px) {
+  footer .services .box {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 footer .services .box img {
   max-width: 50px;
 }
+@media (max-width: 768px) {
+  footer .services .box img {
+    max-width: 40px;
+  }
+}
 footer .services .box .body {
   width: 284px;
+}
+@media (max-width: 768px) {
+  footer .services .box .body {
+    width: 100%;
+  }
 }
 footer .services .box .body ul {
   display: flex;
@@ -347,54 +376,116 @@ footer .services .box .body ul {
   gap: 10px;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  footer .services .box .body ul {
+    gap: 6px;
+  }
+}
 footer .services .box .body ul .title {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
 }
+@media (max-width: 768px) {
+  footer .services .box .body ul .title {
+    font-size: 14px;
+  }
+}
 footer .services .box .body ul li {
   font-size: 14px;
   color: #aaaaaa;
-  margin-bottom: 0px;
+}
+@media (max-width: 768px) {
+  footer .services .box .body ul li {
+    font-size: 13px;
+  }
 }
 footer .more {
   display: flex;
   justify-content: space-between;
-  padding: 65px 0px 65px;
+  padding: 65px 0;
+}
+@media (max-width: 768px) {
+  footer .more {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  footer .more {
+    gap: 40px;
+    padding: 30px 0;
+  }
 }
 footer .more .line {
-  border-style: solid;
-  border-width: 0px 1px 0px 0px;
-  border-color: #464d54;
-  padding: 0px 20px 0px 0px;
+  border-right: 1px solid #464d54;
+  padding-right: 20px;
+}
+@media (max-width: 768px) {
+  footer .more .line {
+    border: none;
+    padding: 0;
+  }
+}
+@media (max-width: 1200px) {
+  footer .more .line {
+    display: none;
+  }
 }
 footer .more .company h1, footer .more .company #banner .bannerInfo .content h2, #banner .bannerInfo .content footer .more .company h2, footer .more .support h1, footer .more .support #banner .bannerInfo .content h2, #banner .bannerInfo .content footer .more .support h2, footer .more .shop h1, footer .more .shop #banner .bannerInfo .content h2, #banner .bannerInfo .content footer .more .shop h2 {
-  color: rgb(153, 153, 153);
+  color: #999999;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  footer .more .company h1, footer .more .company #banner .bannerInfo .content h2, #banner .bannerInfo .content footer .more .company h2, footer .more .support h1, footer .more .support #banner .bannerInfo .content h2, #banner .bannerInfo .content footer .more .support h2, footer .more .shop h1, footer .more .shop #banner .bannerInfo .content h2, #banner .bannerInfo .content footer .more .shop h2 {
+    font-size: 14px;
+  }
+}
 footer .more .company ul, footer .more .support ul, footer .more .shop ul {
-  padding: 6px 0px 3px;
+  padding: 6px 0 3px;
   height: 181px;
   display: flex;
   align-items: start;
   flex-direction: column;
   gap: 3px;
 }
+@media (max-width: 768px) {
+  footer .more .company ul, footer .more .support ul, footer .more .shop ul {
+    height: auto;
+  }
+}
 footer .more .company ul li, footer .more .support ul li, footer .more .shop ul li {
-  padding: 6px 0px 3px;
-  color: rgb(255, 255, 255);
+  padding: 6px 0 3px;
+  color: #ffffff;
   font-size: 15px;
-  font-weight: normal;
   transition: 0.2s ease-in-out;
 }
 footer .more .company ul li:hover, footer .more .support ul li:hover, footer .more .shop ul li:hover {
   color: rgb(77, 77, 184);
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  footer .more .company ul li, footer .more .support ul li, footer .more .shop ul li {
+    font-size: 13px;
+  }
+}
 footer .submit {
   padding: 65px 0 65px 172px;
+}
+@media (max-width: 768px) {
+  footer .submit {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 1200px) {
+  footer .submit {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 30px 0;
+  }
 }
 footer .submit ul {
   display: flex;
@@ -406,16 +497,25 @@ footer .submit ul li {
   width: 100%;
 }
 footer .submit ul li h2 {
-  color: rgb(153, 153, 153);
+  color: #999999;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  footer .submit ul li h2 {
+    font-size: 14px;
+  }
+}
 footer .submit ul li p {
-  padding: 6px 0px 3px;
-  color: rgb(255, 255, 255);
+  padding: 6px 0 3px;
+  color: #ffffff;
   font-size: 15px;
-  font-weight: normal;
+}
+@media (max-width: 768px) {
+  footer .submit ul li p {
+    font-size: 13px;
+  }
 }
 footer .submit ul li p span {
   text-decoration: underline;
@@ -423,40 +523,142 @@ footer .submit ul li p span {
   color: white;
 }
 footer .submit ul li .inp-box {
-  background-color: rgb(255, 255, 255);
-  border-color: rgb(225, 225, 225);
-  max-width: 100%;
+  background-color: #ffffff;
+  border-color: #e1e1e1;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2px;
 }
+@media (max-width: 768px) {
+  footer .submit ul li .inp-box {
+    flex-direction: column;
+    height: auto;
+  }
+}
 footer .submit ul li .inp-box input {
   line-height: 2rem;
-  padding: 0px 1.07em;
+  padding: 0 1.07em;
   width: 100%;
   border: none;
   outline: none;
 }
+@media (max-width: 768px) {
+  footer .submit ul li .inp-box input {
+    padding: 10px;
+  }
+}
 footer .submit ul li .inp-box button {
-  padding-right: 15px;
-  padding-left: 15px;
-  border-style: solid;
+  padding: 0 15px;
   background-color: #2a74ed;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   border: none;
   height: 100%;
   font-size: 11.9px;
+}
+@media (max-width: 768px) {
+  footer .submit ul li .inp-box button {
+    width: 100%;
+    padding: 10px 0;
+  }
 }
 footer .submit ul .social {
   display: flex;
   align-items: center;
   gap: 22px;
 }
+@media (max-width: 768px) {
+  footer .submit ul .social {
+    gap: 15px;
+  }
+}
 footer .submit ul .social span {
   color: #999999;
   font-size: 20px;
+}
+footer .sign {
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  footer .sign {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  footer .sign {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+footer .sign .left, footer .sign #Trends .right, #Trends footer .sign .right {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+}
+@media (max-width: 1200px) {
+  footer .sign .left, footer .sign #Trends .right, #Trends footer .sign .right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+footer .sign .left .logo, footer .sign #Trends .right .logo, #Trends footer .sign .right .logo {
+  width: 117px;
+  height: 23px;
+}
+@media (max-width: 768px) {
+  footer .sign .left .logo, footer .sign #Trends .right .logo, #Trends footer .sign .right .logo {
+    width: 100px;
+  }
+}
+footer .sign .left .logo img, footer .sign #Trends .right .logo img, #Trends footer .sign .right .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .sign .left .contact, footer .sign #Trends .right .contact, #Trends footer .sign .right .contact {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  flex-direction: column;
+}
+footer .sign .left .contact ul, footer .sign #Trends .right .contact ul, #Trends footer .sign .right .contact ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  footer .sign .left .contact ul, footer .sign #Trends .right .contact ul, #Trends footer .sign .right .contact ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+footer .sign .left .contact ul li, footer .sign #Trends .right .contact ul li, #Trends footer .sign .right .contact ul li {
+  font-size: 15px;
+  color: #cccccc;
+}
+footer .sign .left .contact ul li span, footer .sign #Trends .right .contact ul li span, #Trends footer .sign .right .contact ul li span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+footer .sign .left .contact h2, footer .sign #Trends .right .contact h2, #Trends footer .sign .right .contact h2 {
+  font-size: 15px;
+  color: #cccccc;
+}
+footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 span, #Trends footer .sign .right .contact h2 span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 #banner {
@@ -733,9 +935,24 @@ footer .submit ul .social span {
 #lookout {
   padding: 110px 150px;
 }
+@media (max-width: 1200px) {
+  #lookout {
+    padding: 100px 50px;
+  }
+}
+@media (max-width: 820px) {
+  #lookout {
+    padding: 90px 30px;
+  }
+}
+@media (max-width: 768px) {
+  #lookout {
+    padding: 60px 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   #lookout {
-    padding: 50px 20px;
+    padding: 50px 30px;
   }
   #lookout .circleStyle, #lookout .fastCheck .keyboard, #lookout .fastCheck .phone, #lookout .fastCheck .mac, #lookout .fastCheck .watch {
     display: none;
@@ -1019,6 +1236,13 @@ footer .submit ul .social span {
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 1024px) {
+  #lookout .wrapper {
+    align-items: start;
+    justify-content: start;
+    margin-top: 20px;
+  }
+}
 #lookout .wrapper .info {
   width: 70%;
 }
@@ -1110,9 +1334,44 @@ footer .submit ul .social span {
 .product .productFooter .stars i {
   font-size: 20px;
 }
+@media (max-width: 1024px) {
+  .product {
+    padding: 10px;
+    margin: 25px 0;
+  }
+  .product .productFooter h2 {
+    font-size: 16px;
+  }
+  .product .productFooter h3 {
+    font-size: 1rem;
+  }
+  .product .productFooter .stars i {
+    font-size: 16px;
+  }
+}
+@media (max-width: 568px) {
+  .product {
+    padding: 8px;
+    margin: 20px 0;
+  }
+  .product .productFooter h2 {
+    font-size: 14px;
+  }
+  .product .productFooter h3 {
+    font-size: 0.9rem;
+  }
+  .product .productFooter .stars i {
+    font-size: 14px;
+  }
+}
 
 #Trends {
   padding: 0 150px;
+}
+@media (max-width: 1024px) {
+  #Trends {
+    padding: 0 30px;
+  }
 }
 #Trends .heading {
   display: flex;
@@ -1125,11 +1384,18 @@ footer .submit ul .social span {
   font-size: 40px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  #Trends .heading h1, #Trends .heading #banner .bannerInfo .content h2, #banner .bannerInfo .content #Trends .heading h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 568px) {
+  #Trends .heading h1, #Trends .heading #banner .bannerInfo .content h2, #banner .bannerInfo .content #Trends .heading h2 {
+    font-size: 24px;
+  }
+}
 #Trends .heading img {
   margin-top: 20px;
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
   height: auto;
   max-width: 100%;
 }
@@ -1140,6 +1406,11 @@ footer .submit ul .social span {
   overflow: hidden;
   cursor: pointer;
   position: relative;
+}
+@media (max-width: 768px) {
+  #Trends .left, #Trends .right {
+    height: auto;
+  }
 }
 #Trends .left:hover .content button, #Trends .right:hover .content button {
   margin-top: 20px;
@@ -1156,6 +1427,11 @@ footer .submit ul .social span {
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  #Trends .left img, #Trends .right img {
+    height: auto;
+  }
 }
 #Trends .left .content, #Trends .right .content {
   padding: 0 80px;
@@ -1174,9 +1450,18 @@ footer .submit ul .social span {
 #Trends .left .content h3, #Trends .right .content h3 {
   font-size: 40px;
   font-weight: 500;
-  text-transform: none;
   line-height: 1.3em;
   color: white;
+}
+@media (max-width: 768px) {
+  #Trends .left .content h3, #Trends .right .content h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 568px) {
+  #Trends .left .content h3, #Trends .right .content h3 {
+    font-size: 20px;
+  }
 }
 #Trends .left .content button, #Trends .right .content button {
   transform: translateY(100%);
@@ -1192,17 +1477,29 @@ footer .submit ul .social span {
   transition: 0.3s ease;
 }
 #Trends .left .content button:hover, #Trends .right .content button:hover {
-  background-color: #222222;
-  color: white;
+  background-color: #222;
+}
+@media (max-width: 768px) {
+  #Trends .left .content button, #Trends .right .content button {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-top: 10px;
+  }
 }
 #Trends .background {
   margin-top: 30px;
+  margin-bottom: 0;
+  padding: 11%;
+  border-radius: 15px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 0px;
-  padding: 11% 11%;
-  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  #Trends .background {
+    padding: 40px 20px;
+  }
 }
 #Trends .background .content h3 {
   font-size: 12px;
@@ -1216,44 +1513,60 @@ footer .submit ul .social span {
   line-height: 1.3em;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  #Trends .background .content h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 568px) {
+  #Trends .background .content h2 {
+    font-size: 20px;
+  }
+}
 #Trends .background .content img {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 20px;
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
   height: auto;
   max-width: 100%;
 }
 #Trends .background .content p {
-  color: rgb(68, 68, 68);
-  font-family: Roboto, sans-serif;
+  color: #444;
   font-size: 18px;
   line-height: 1.7em;
   width: 83%;
   margin-bottom: 2.43rem;
 }
+@media (max-width: 768px) {
+  #Trends .background .content p {
+    font-size: 16px;
+    width: 100%;
+  }
+}
 #Trends .background .content button {
   font-size: 16px;
   font-weight: 500;
-  fill: rgb(42, 116, 237);
-  color: rgb(42, 116, 237);
-  --fill-color: #22222200;
+  fill: #2a74ed;
+  color: #2a74ed;
   border: none;
   transition: 0.2s ease-in-out;
 }
 #Trends .background .content button:hover {
   color: black;
-  cursor: pointer;
 }
 #Trends .box {
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   text-align: left;
   border-radius: 20px;
   padding: 30px 40px 40px;
   display: flex;
   align-items: start;
+}
+@media (max-width: 768px) {
+  #Trends .box {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 #Trends .box .boxImg {
   width: 100vw;
@@ -1274,37 +1587,73 @@ footer .submit ul .social span {
   font-size: 14px;
   font-style: italic;
   line-height: 24px;
-  color: rgb(85, 85, 85);
-  margin: 0px 0px 10px 15px;
+  color: #555;
+  margin: 0 0 10px 15px;
   width: 77%;
 }
+@media (max-width: 768px) {
+  #Trends .box .boxBody p {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 #Trends .box .boxBody .stars {
-  margin: 0px 0px 10px 15px;
+  margin: 0 0 10px 15px;
   display: flex;
   align-items: center;
   gap: 2px;
 }
+@media (max-width: 768px) {
+  #Trends .box .boxBody .stars {
+    margin-left: 0;
+  }
+}
 #Trends .box .boxBody .stars i {
-  color: rgb(253, 216, 53);
+  color: #fdd835;
 }
 #Trends .box .boxBody ul .name {
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 24px;
-  color: rgb(0, 0, 0);
-  margin: 0px 0px 0px 15px;
+  color: #000;
+  margin: 0 0 0 15px;
+}
+@media (max-width: 768px) {
+  #Trends .box .boxBody ul .name {
+    margin-left: 0;
+  }
 }
 #Trends .box .boxBody ul .prof {
   font-size: 16px;
   line-height: 24px;
-  color: rgb(136, 136, 136);
-  margin: 0px 0px 0px 15px;
+  color: #888;
+  margin: 0 0 0 15px;
+}
+@media (max-width: 768px) {
+  #Trends .box .boxBody ul .prof {
+    margin-left: 0;
+  }
 }
 
 #Articals {
   margin-top: 95px;
   padding: 0 150px;
+}
+@media (max-width: 1200px) {
+  #Articals {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 820px) {
+  #Articals {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  #Articals {
+    padding: 0 30px;
+  }
 }
 #Articals .heading {
   margin-bottom: 42px;
