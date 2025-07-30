@@ -1,1 +1,175 @@
 $main-font: "Roboto", sans-serif;
+
+//! Header Colors
+$low-opacity-bg-color: rgba(255, 255, 255, 0.8);
+$text-color: #222;
+$text-color-hover: rgb(110, 110, 230);
+$text-secondary-hover: #5f5f5f;
+$primary-btn-bg: #2a74ed;
+$primary-btn-color: #ffffff;
+$black-text-color: #000;
+
+//! Header Sizes
+$header-height: 75px;
+$logo-max-width: 117px;
+$nav-padding-desktop: 0 150px;
+$nav-padding-large: 0 50px;
+$nav-padding-mobile: 0 30px;
+
+//! Header Font
+$font-size-default: 16px;
+$font-size-small: 15px;
+$font-weight-medium: 500;
+
+//! Header Border radius
+$button-radius: 30px;
+
+//! Header Spacing
+$menu-gap: 16px;
+$actions-gap: 20px;
+$menu-item-padding: 7px 5px;
+$button-padding: 12px 15px;
+
+//! Header Colors
+$low-opacity-bg-color: rgba(255, 255, 255, 0.8);
+$text-color: #222;
+$text-color-hover: rgb(110, 110, 230);
+$text-secondary-hover: #5f5f5f;
+$primary-btn-bg: #2a74ed;
+$primary-btn-color: #ffffff;
+$sign-text-color: #000;
+
+
+//!...................................................................//
+
+//! Footer Colors
+$footer-bg-color: #32373c;
+$footer-border-color: gray;
+$footer-line-color: #464d54;
+$text-light: #ffffff;
+$text-medium: #cccccc;
+$text-dark: #999999;
+$text-muted: #aaaaaa;
+$text-link-hover: rgb(77, 77, 184);
+$input-bg: #ffffff;
+$input-border: #e1e1e1;
+$button-bg: #2a74ed;
+$button-color: #ffffff;
+
+//! Footer Font Sizes
+$font-xs: 11.9px;
+$font-sm: 13px;
+$font-md: 14px;
+$font-base: 15px;
+$font-lg: 16px;
+$font-xl: 20px;
+
+//! Footer Font Weight
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: bold;
+
+//! Footer Padding
+$padding-desktop: 0 150px;
+$padding-mobile: 0 20px;
+$section-padding-lg: 65px 0;
+$section-padding-md: 40px 0;
+$section-padding-sm: 30px 0;
+$submit-padding: 65px 0 65px 172px;
+
+//! Footer  Logo
+$logo-width: 117px;
+$logo-height: 23px;
+$logo-width-mobile: 100px;
+
+//! Footer Gaps
+$gap-sm: 10px;
+$gap-md: 15px;
+$gap-lg: 20px;
+$gap-xl: 25px;
+$gap-xxl: 63px;
+
+//! Footer Border
+$border-thin: 1px solid;
+
+
+//!..................................................................../////
+
+//! Product Colors
+$product-border-color: rgb(225, 225, 225);
+$product-title-color: rgb(80, 80, 80);
+$product-price-color: rgb(34, 34, 34);
+$product-star-color: gold;
+
+//! Product Sizes 
+$product-border-width: 1px;
+$product-border-radius: 20px;
+
+//! Product Padding
+$product-padding-desktop: 15px;
+$product-padding-tablet: 10px;
+$product-padding-mobile: 8px;
+
+$product-margin-desktop: 37px 0;
+$product-margin-tablet: 25px 0;
+$product-margin-mobile: 20px 0;
+
+//! Product Font Sizes
+$product-title-font: 20px;
+$product-title-font-tablet: 16px;
+$product-title-font-mobile: 14px;
+
+$product-price-font: 1.14rem;
+$product-price-font-tablet: 1rem;
+$product-price-font-mobile: 0.9rem;
+
+$product-star-size: 20px;
+$product-star-size-tablet: 16px;
+$product-star-size-mobile: 14px;
+
+//!...........................................................................////
+//!articals Colors
+$article-heading-color: #222;
+$article-title-color: rgb(34, 34, 34);
+$article-link-color: rgb(42, 116, 237);
+$article-border-color: rgb(225, 225, 225);
+$article-meta-color: rgb(136, 136, 136);
+$article-category-bg: rgb(91, 86, 90);
+$article-category-text: #fff;
+$article-date-bg: #fff;
+$article-date-text: #222;
+$review-text-color: black;
+
+//! articals Font Sizes
+$article-heading-size: 40px;
+$article-title-size: 18px;
+$article-link-size: 1rem;
+$article-date-size: 1.65rem;
+$article-month-size: 0.85rem;
+$article-category-size: 0.85rem;
+$article-review-size: 12px;
+
+//! articals Padding
+$article-section-margin-top: 95px;
+$article-heading-gap: 10px;
+$article-heading-margin-bottom: 42px;
+$article-content-padding-desktop: 0 150px;
+$article-content-padding-md: 0 50px;
+$article-content-padding-sm: 0 30px;
+$article-box-margin-top: 20px;
+$article-title-margin-bottom: 15px;
+$article-line-margin-top: 15px;
+$article-review-margin-top: 10px;
+$article-pos-element-padding: 15px;
+$marquee-margin-top: 10px;
+
+//! Articals Radius
+$article-box-radius: 15px;
+$article-date-radius: 50%;
+$article-category-radius: 12px;
+
+//! articles more
+$article-date-size: 55.9px;
+$review-img-size: 20px;
+$marquee-item-width: 265px;
+$marquee-item-height: 147px;
