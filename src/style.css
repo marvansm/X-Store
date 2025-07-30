@@ -142,6 +142,12 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+}
+
 .product .productImg img, footer .sign .left .logo img, footer .sign #Trends .right .logo img, #Trends footer .sign .right .logo img, header nav .logo img {
   width: 100%;
   height: 100%;
