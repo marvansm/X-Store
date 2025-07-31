@@ -1,0 +1,133 @@
+#blogs {
+  padding: $nav-padding-desktop;
+  padding-bottom: 126px;
+  padding-top: 32px;
+  .line {
+    margin-top: 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+    cursor: grab;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    .boxImg {
+      border-radius: $article-box-radius;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease-in-out;
+        object-fit: cover;
+      }
+    }
+
+    .boxBody {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: $article-box-margin-top;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        margin-bottom: 20px;
+        li {
+          color: #888;
+          font-size: 15px;
+        }
+      }
+      h2 {
+        font-size: $article-title-size;
+        font-weight: 500;
+        color: $article-title-color;
+        margin-bottom: $article-title-margin-bottom;
+      }
+
+      h3 {
+        color: $article-link-color;
+        font-size: $article-link-size;
+        margin-bottom: $article-title-margin-bottom;
+      }
+
+      .line {
+        border-style: solid;
+        border-width: 1px 0 0;
+        border-color: $article-border-color;
+        margin-top: $article-line-margin-top;
+        width: 100%;
+      }
+
+      .review {
+        width: 100%;
+        margin-top: $article-review-margin-top;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 1;
+
+          li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: $article-review-size;
+            color: $review-text-color;
+
+            img {
+              border-radius: 50%;
+              margin-inline-end: 5px;
+              max-width: $review-img-size;
+            }
+
+            span {
+              color: $article-meta-color;
+            }
+          }
+        }
+
+        .right {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+  .content {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: none;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+      border-style: none;
+      padding: 0.83rem 1.7rem;
+      background-color: #2a74ed;
+      color: white;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+}
