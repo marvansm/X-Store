@@ -61,16 +61,20 @@
                 </li>
               </ul>
             </div>
-            <div class="burger">
-              <i class="ri-menu-line"></i>
-            </div>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="hero">
+      <section id="hero">
         <div class="container-fluid">
+          <div class="breadcrumb">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><i class="ri-arrow-right-s-line"></i></li>
+              <li>Shop</li>
+            </ul>
+          </div>
           <div class="heading">
             <h1>The Shop</h1>
             <p>
@@ -79,8 +83,439 @@
               commodo fames laoreet..
             </p>
           </div>
+          <div class="filter">
+            <ul>
+              <li>
+                <select name="category" id="category">
+                  <option>Category</option>
+                  <option>Computer & PC</option>
+                  <option>Smart Gadgets</option>
+                  <option>TV & Monitors</option>
+                  <option>TV & Monitors</option>
+                  <option>Wearable Items</option>
+                </select>
+              </li>
+              <li>
+                <select name="price" id="price">
+                  <option>Price</option>
+                  <option>Price:$149 — $1,300</option>
+                </select>
+              </li>
+              <li>
+                <select name="color" id="color">
+                  <option>Colors</option>
+                  <option><div class="yellow"></div></option>
+                  <option><div class="red"></div></option>
+                  <option><div class="blue"></div></option>
+                </select>
+              </li>
+              <li>
+                <select name="rating" id="rating">
+                  <option>Rating</option>
+                  <option value=""></option>
+                </select>
+              </li>
+              <li>
+                <button><i class="ri-search-line"></i> Search</button>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="discountDevice"
+            style="
+              background-image: url(https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/04_Sub_banner.jpeg);
+            "
+          >
+            <ul>
+              <li><p>Save upto 30% discount on</p></li>
+              <li><h2>Smart Home Devices</h2></li>
+              <li><button>Buy Product Now</button></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
+      <section id="products">
+        <div class="container-fluid">
+          <div class="sort">
+            <div class="left">
+              <ul>
+                <li>
+                  <select name="" id="">
+                    <option value="">Default sorting</option>
+                    <option value="">Sort by popularity</option>
+                    <option value="">Sort by average rating</option>
+                    <option value="">Sort by latest</option>
+                    <option value="">Sort by price: low to high</option>
+                  </select>
+                </li>
+                <li><i class="ri-grid-fill"></i></li>
+                <li><i class="ri-menu-2-fill"></i></li>
+              </ul>
+            </div>
+            <div class="right">
+              <p>Show</p>
+              <select name="" id="">
+                <option value="">12</option>
+                <option value="">24</option>
+                <option value="">36</option>
+                <option value="">All</option>
+              </select>
+            </div>
+          </div>
+          <div class="allProducts">
+            <div class="row g-4">
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="productBox">
+                  <div class="boxPic">
+                    <img
+                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/28_1-1-366x366.jpeg"
+                      alt=""
+                    />
+                    <div class="posIcon">
+                      <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="posBtn">
+                      <button><i class="ri-eye-line"></i> Quick shop</button>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <h2>Amazon Echo Dot (3rd Gen) Smart</h2>
+                    <p>Brand 7</p>
+                    <div class="stars">
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                    <h3>$805.00</h3>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container-fluid">
