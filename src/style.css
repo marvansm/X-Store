@@ -2677,4 +2677,254 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   background-color: rgba(2, 1, 1, 0);
   padding: 12px 24px;
   border: none;
+}
+
+#blogDetail {
+  padding: 0 150px;
+  margin-bottom: 102px;
+}
+#blogDetail .left, #blogDetail #Trends .right, #Trends #blogDetail .right {
+  margin-top: 50px;
+  width: 100%;
+}
+#blogDetail .left img, #blogDetail #Trends .right img, #Trends #blogDetail .right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+#blogDetail .left .info, #blogDetail #Trends .right .info, #Trends #blogDetail .right .info {
+  margin-top: 22px;
+}
+#blogDetail .left .info h2, #blogDetail #Trends .right .info h2, #Trends #blogDetail .right .info h2 {
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: none;
+  color: rgb(34, 34, 34);
+  margin-bottom: 0.3em;
+  overflow-wrap: break-word;
+  font-size: 24px;
+}
+#blogDetail .left .info ul, #blogDetail #Trends .right .info ul, #Trends #blogDetail .right .info ul {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#blogDetail .left .info ul li, #blogDetail #Trends .right .info ul li, #Trends #blogDetail .right .info ul li {
+  color: #888;
+  font-size: 17px;
+}
+#blogDetail .left .info p, #blogDetail #Trends .right .info p, #Trends #blogDetail .right .info p {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.65em;
+  color: rgb(119, 119, 119);
+}
+#blogDetail .left .info h3, #blogDetail #Trends .right .info h3, #Trends #blogDetail .right .info h3 {
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.65em;
+  color: rgb(34, 34, 34);
+}
+#blogDetail .left .info .sign, #blogDetail #Trends .right .info .sign, #Trends #blogDetail .right .info .sign {
+  margin: 30px auto;
+  width: 850px;
+  height: 60px;
+}
+#blogDetail .left .info .sign img, #blogDetail #Trends .right .info .sign img, #Trends #blogDetail .right .info .sign img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#blogDetail .lines {
+  width: 100%;
+  margin-top: 60px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+}
+#blogDetail .right {
+  margin-top: 50px;
+  position: sticky;
+  top: 0;
+}
+#blogDetail .right h2 {
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: none;
+  color: rgb(34, 34, 34);
+  font-size: 17px;
+}
+#blogDetail .right .lines {
+  margin: 15px 0;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.24);
+}
+#blogDetail .right .categories {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 35px;
+  margin-bottom: 20px;
+}
+#blogDetail .right .categories ul {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+#blogDetail .right .categories ul li {
+  color: #888;
+  transition: 0.3s ease-in-out;
+}
+#blogDetail .right .categories ul li span {
+  color: black;
+}
+#blogDetail .right .categories ul li:hover {
+  cursor: pointer;
+  color: black;
+}
+#blogDetail .right .best-selling {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 35px;
+  margin-bottom: 20px;
+}
+#blogDetail .right .best-selling .products {
+  display: flex;
+  align-items: start;
+  margin-bottom: 25px;
+}
+#blogDetail .right .best-selling .products img {
+  max-width: 5rem;
+  max-height: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+  width: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#blogDetail .right .best-selling .products .products-info h3 {
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: none;
+  color: rgb(34, 34, 34);
+}
+#blogDetail .right .best-selling .products .products-info .price {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #888;
+}
+#blogDetail .right .best-selling .products .products-info .price.discount {
+  text-decoration: line-through;
+  color: #777;
+}
+#blogDetail .right .best-selling .products .products-info .price.new-price {
+  color: rgb(120, 120, 252);
+}
+#blogDetail .right .shopNow {
+  padding: 45px 155px 45px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  height: 600px;
+}
+#blogDetail .right .shopNow h3 {
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.3em;
+  color: rgb(34, 34, 34);
+}
+#blogDetail .right .shopNow button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 27px;
+  text-transform: none;
+  border-radius: 100px;
+  border-style: none;
+  background-color: #2a74ed;
+  margin-top: 10px;
+  height: auto;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+#blogDetail .right .shopNow button:hover {
+  background-color: black;
+  color: white;
+}
+#blogDetail .comment-form {
+  margin-top: 102px;
+}
+#blogDetail .comment-form h2 {
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: none;
+  color: rgb(34, 34, 34);
+  font-size: 1.7142em;
+  padding-bottom: 1em;
+}
+#blogDetail .comment-form p {
+  margin-bottom: 1.43rem;
+  line-height: 1.6;
+  font-size: 1.14rem;
+  color: black;
+  font-size: 15px;
+}
+#blogDetail .comment-form form {
+  display: flex;
+  flex-direction: column;
+}
+#blogDetail .comment-form form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  resize: vertical;
+  height: 200px;
+}
+#blogDetail .comment-form form .input-fields {
+  display: flex;
+  gap: 38px;
+  margin-bottom: 15px;
+}
+#blogDetail .comment-form form .input-fields input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#blogDetail .comment-form form label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+#blogDetail .comment-form form label input {
+  margin-right: 8px;
+}
+#blogDetail .comment-form form button {
+  width: 190px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: none;
+  border-radius: 100px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 0.75rem 2.2rem;
+  transition: 0.3s ease-in-out;
+}
+#blogDetail .comment-form form button:hover {
+  background-color: white;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
