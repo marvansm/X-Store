@@ -2499,4 +2499,32 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 }
 #message .forms button:hover {
   background-color: black;
+}
+
+#aboutUs {
+  padding: 0 150px;
+}
+
+.heading {
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.heading h1, .heading #banner .bannerInfo .content h2, #banner .bannerInfo .content .heading h2 {
+  color: #222222;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+.heading p {
+  text-align: center;
+  width: 55%;
+  color: #666666;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
 }/*# sourceMappingURL=style.css.map */
