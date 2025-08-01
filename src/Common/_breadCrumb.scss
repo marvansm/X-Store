@@ -1,0 +1,15 @@
+.breadcrumb {
+    margin-top: 22px;
+  ul {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #666666;
+    gap: 3px;
+    a {
+      &:hover {
+        color: #888787;
+      }
+    }
+  }
+}

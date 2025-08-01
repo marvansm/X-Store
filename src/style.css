@@ -2354,4 +2354,149 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 }
 #blogs .content button:hover {
   background-color: black;
+}
+
+#ContactUs {
+  padding: 0 150px;
+}
+#ContactUs .contactHero {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+#ContactUs .contactHero h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #222222;
+  line-height: 1;
+}
+#ContactUs .contactHero .first {
+  padding: 35px 80px 30px 80px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #e6e6e6;
+  border-radius: 20px 20px 20px 20px;
+}
+#ContactUs .contactHero .first ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#ContactUs .contactHero .first ul li img {
+  max-width: 52px;
+}
+#ContactUs .contactHero .first ul li p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: normal;
+  color: #666666;
+  margin-bottom: 10px;
+}
+#ContactUs .contactHero .first ul li button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4em;
+  fill: #2a74ed;
+  color: #2a74ed;
+  background-color: rgba(2, 1, 1, 0);
+  padding: 12px 24px;
+  border: none;
+}
+
+.breadcrumb {
+  margin-top: 22px;
+}
+.breadcrumb ul {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #666666;
+  gap: 3px;
+}
+.breadcrumb ul a:hover {
+  color: #888787;
+}
+
+#map {
+  padding: 0 150px;
+  margin-top: 34px;
+}
+#map iframe {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+#message {
+  padding: 0 150px;
+  margin: 105px 0;
+}
+#message .forms {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#message .forms h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.25em;
+  color: rgb(34, 34, 34);
+  margin-bottom: 30px;
+}
+#message .forms .inputs {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#message .forms .inputs input {
+  outline: none;
+  padding: 20px 30px;
+  background-color: rgb(246, 246, 246);
+  min-height: 46px;
+  border-style: solid;
+  border-color: rgb(246, 246, 246);
+  border-radius: 20px;
+  height: 2.642rem;
+  line-height: 2rem;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#message .forms textarea {
+  width: 50%;
+  background-color: rgb(246, 246, 246);
+  min-height: 200px;
+  border-style: solid;
+  border-color: rgb(246, 246, 246);
+  border-radius: 20px;
+  line-height: 1.5;
+  font-size: 1.14rem;
+  padding: 20px 30px 20px 30px;
+  color: gray;
+  outline: none;
+}
+#message .forms button {
+  margin-top: 15px;
+  background-color: #2a74ed;
+  color: #ffffff;
+  padding: 15px 0px 15px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 100px;
+  border: none;
+  text-transform: none;
+  width: 50%;
+  transition: 0.3s ease-in-out;
+}
+#message .forms button:hover {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */

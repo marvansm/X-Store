@@ -1,0 +1,66 @@
+#message {
+  padding: $nav-padding-desktop;
+  margin: 105px 0;
+  .forms {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.25em;
+      color: rgb(34, 34, 34);
+      margin-bottom: 30px;
+    }
+    .inputs {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      input {
+        outline: none;
+        padding: 20px 30px;
+        background-color: rgb(246, 246, 246);
+        min-height: 46px;
+        border-style: solid;
+        border-color: rgb(246, 246, 246);
+        border-radius: 20px;
+        height: 2.642rem;
+        line-height: 2rem;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+    textarea {
+      width: 50%;
+      background-color: rgb(246, 246, 246);
+      min-height: 200px;
+      border-style: solid;
+      border-color: rgb(246, 246, 246);
+      border-radius: 20px;
+      line-height: 1.5;
+      font-size: 1.14rem;
+      padding: 20px 30px 20px 30px;
+      color: gray;
+      outline: none;
+    }
+    button {
+      margin-top: 15px;
+      background-color: #2a74ed;
+      color: #ffffff;
+      padding: 15px 0px 15px 0px;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 100px;
+      border: none;
+      text-transform: none;
+      width: 50%;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+}
