@@ -2504,6 +2504,14 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #aboutUs {
   padding: 0 150px;
 }
+#aboutUs .bannerBg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
 
 .heading {
   margin-top: 66px;
@@ -2527,4 +2535,143 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
+}
+
+#Experiences {
+  padding: 0 150px;
+  margin-top: 113px;
+}
+#Experiences .left ul, #Experiences #Trends .right ul, #Trends #Experiences .right ul {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+#Experiences .left ul li h3, #Experiences #Trends .right ul li h3, #Trends #Experiences .right ul li h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+#Experiences .left ul li h2, #Experiences #Trends .right ul li h2, #Trends #Experiences .right ul li h2 {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+}
+#Experiences .left ul li h2 span, #Experiences #Trends .right ul li h2 span, #Trends #Experiences .right ul li h2 span {
+  color: rgb(42, 116, 237);
+}
+#Experiences .left ul li p, #Experiences #Trends .right ul li p, #Trends #Experiences .right ul li p {
+  color: rgb(68, 68, 68);
+  font-size: 18px;
+  line-height: 1.7em;
+}
+#Experiences .right {
+  width: 600px;
+}
+#Experiences .right ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Experiences .right ul li img {
+  max-width: 200px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#OurMission {
+  margin-top: 97px;
+  padding: 0 150px;
+}
+#OurMission .left img, #OurMission #Trends .right img, #Trends #OurMission .right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#OurMission .right {
+  width: 700px;
+}
+#OurMission .right ul {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+#OurMission .right ul li h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+#OurMission .right ul li h2 {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+}
+#OurMission .right ul li h2 span {
+  color: rgb(42, 116, 237);
+}
+#OurMission .right ul li p {
+  color: rgb(68, 68, 68);
+  font-size: 18px;
+  line-height: 1.7em;
+}
+#OurMission .right .ourMission {
+  margin-top: 115px;
+  display: flex;
+  align-items: center;
+}
+#OurMission .right .ourMission ul .title {
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+}
+#OurMission .right .ourMission ul li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: rgb(102, 102, 102);
+}
+#OurMission .first {
+  margin: 120px 0;
+  padding: 35px 80px 30px 80px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #e6e6e6;
+  border-radius: 20px 20px 20px 20px;
+}
+#OurMission .first ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#OurMission .first ul li img {
+  max-width: 52px;
+}
+#OurMission .first ul li p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: normal;
+  color: #666666;
+  margin-bottom: 10px;
+}
+#OurMission .first ul li button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4em;
+  fill: #2a74ed;
+  color: #2a74ed;
+  background-color: rgba(2, 1, 1, 0);
+  padding: 12px 24px;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
