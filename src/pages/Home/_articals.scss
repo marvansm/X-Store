@@ -69,14 +69,14 @@
             background-color: $article-date-bg;
             color: $article-date-text;
             border-radius: $article-date-radius;
-            width: $article-date-size;
-            height: $article-date-size;
+            width: 50px;
+            height: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             font-weight: 500;
-            font-size: $article-date-size;
+            font-size: 30px;
 
             .month {
               font-size: $article-month-size;
