@@ -1,5 +1,14 @@
 #hero {
   padding: $nav-padding-desktop;
+
+  @media (max-width: 1200px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 30px;
+  }
+
   .heading {
     margin-top: 66px;
     display: flex;
@@ -7,77 +16,82 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+
     h1 {
-      color: #222222;
+      color: #222;
       font-size: 40px;
       font-weight: 500;
       line-height: 1.3em;
+      text-align: center;
     }
+
     p {
       text-align: center;
       width: 55%;
-      color: #666666;
+      color: #666;
       font-family: "Roboto", Sans-serif;
       font-size: 18px;
       font-weight: 400;
       line-height: 1.5em;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
+
   .breadcrumb {
     ul {
       display: flex;
       align-items: center;
       font-size: 13px;
-      color: #666666;
+      color: #666;
       gap: 3px;
-      a {
-        &:hover {
-          color: #888787;
-        }
+
+      a:hover {
+        color: #888;
       }
     }
   }
+
   .filter {
     margin-top: 46px;
+
     ul {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 20px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+
+        align-items: stretch;
+      }
+
       li {
+        width: 100%;
+        @media (max-width: 768px) {
+          display: flex;
+
+          align-items: center;
+          justify-content: center;
+        }
+
         select {
           font-size: 14px;
-          font-weight: normal;
           text-transform: uppercase;
           line-height: 26px;
-          border-style: solid;
-          border-width: 1px 1px 1px 1px;
-          border-color: #e1e1e1;
+          border: 1px solid #e1e1e1;
           padding: 6px 20px 6px 16px;
-          border-radius: 100px 100px 100px 100px;
-          width: 313.594px;
+          border-radius: 100px;
+          width: 100%;
+          max-width: 313.594px;
           height: 40px;
           background-color: transparent;
           outline: none;
-          .yellow {
-            width: 30px;
-            height: 30px;
-            background-color: yellow;
-            border-radius: 50%;
-          }
-          .red {
-            width: 30px;
-            height: 30px;
-            background-color: red;
-            border-radius: 50%;
-          }
-          .blue {
-            width: 30px;
-            height: 30px;
-            background-color: blue;
-            border-radius: 50%;
-          }
         }
+
         button {
           display: flex;
           align-items: center;
@@ -85,18 +99,17 @@
           background-color: #2a74ed;
           font-size: 16px;
           font-weight: 500;
-          text-transform: none;
           line-height: 28px;
-          fill: #fff;
           color: #fff;
-          border-style: solid;
-          border-width: 0px 0px 0px 0px;
-          border-radius: 100px 100px 100px 100px;
-          padding: 7px 85px 7px 85px;
+          border: none;
+          border-radius: 100px;
+          padding: 7px 85px;
           transition: 0.3s ease-in-out;
+
           i {
             font-size: 18px;
           }
+
           &:hover {
             background-color: black;
             color: white;
@@ -105,46 +118,72 @@
       }
     }
   }
+
+  .colors {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+
+    li {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+
+      &.yellow {
+        background-color: yellow;
+      }
+
+      &.red {
+        background-color: red;
+      }
+
+      &.blue {
+        background-color: blue;
+      }
+    }
+  }
+
   .discountDevice {
     width: 100%;
     margin-top: 26px;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 85px 0px 65px 100px;
-    border-radius: 20px 20px 20px 20px;
+    padding: 85px 30px 65px 100px;
+    border-radius: 20px;
+
+    @media (max-width: 768px) {
+      padding: 40px 20px;
+    }
+
     ul {
       display: flex;
-      align-items: start;
-      justify-content: start;
       flex-direction: column;
       gap: 12px;
+
       li {
         p {
           font-size: 12px;
           font-weight: 400;
           text-transform: uppercase;
           letter-spacing: 2px;
-          color: #444444;
+          color: #444;
         }
+
         h2 {
           font-size: 40px;
           font-weight: 500;
           line-height: 1.3em;
         }
+
         button {
-          border-style: solid;
-          border-width: 0px 0px 0px 0px;
-          border-color: #2a74ed;
-          min-width: 165px;
+          background-color: #2a74ed;
+          color: #fff;
           font-size: 16px;
           font-weight: bold;
-          text-transform: none;
-          fill: #ffffff;
-          color: #ffffff;
-          background-color: #2a74ed;
-          border-radius: 100px 100px 100px 100px;
-          padding: 15px 038px 15px 38px;
+          border: none;
+          border-radius: 100px;
+          padding: 15px 38px;
         }
       }
     }
