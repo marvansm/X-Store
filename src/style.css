@@ -1911,13 +1911,13 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 }
 #hero .filter ul {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
 @media (max-width: 768px) {
   #hero .filter ul {
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: stretch;
   }
 }
