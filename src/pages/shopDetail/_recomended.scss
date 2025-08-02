@@ -1,0 +1,22 @@
+#recomended {
+  margin-top: 100px;
+
+  padding: $nav-padding-desktop;
+
+  @media (max-width: 1200px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 30px;
+  }
+  h5 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: #222222;
+  }
+  .related {
+    margin: 100px 0;
+  }
+}

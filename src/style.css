@@ -3425,4 +3425,28 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 }
 #shopDetail .write-review form button:hover {
   background-color: #555;
+}
+
+#recomended {
+  margin-top: 100px;
+  padding: 0 150px;
+}
+@media (max-width: 1200px) {
+  #recomended {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #recomended {
+    padding: 0 30px;
+  }
+}
+#recomended h5 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #222222;
+}
+#recomended .related {
+  margin: 100px 0;
 }/*# sourceMappingURL=style.css.map */
