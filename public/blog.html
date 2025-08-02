@@ -23,19 +23,21 @@
   </head>
   <body>
     <header>
-      <nav class="container-fluid">
+      <nav class="container-fluid py-3">
         <div class="row align-items-center g-3">
-          <div class="col-xl-3">
+          <div class="col-6 col-xl-3 d-flex align-items-center">
             <div class="logo">
               <a href="./index.html">
                 <img
                   src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Logo@2x.png"
                   alt="logo"
+                  style="max-height: 40px"
                 />
               </a>
             </div>
           </div>
-          <div class="col-xl-6">
+
+          <div class="col-xl-6 d-none d-xl-block">
             <div class="menu">
               <ul>
                 <li>Elements</li>
@@ -48,23 +50,45 @@
               </ul>
             </div>
           </div>
-          <div class="col-xl-3">
-            <div class="actions">
+
+          <div
+            class="col-6 col-xl-3 d-flex justify-content-end align-items-center"
+          >
+            <div class="actions d-none d-xl-flex">
               <ul>
                 <li><i class="ri-refresh-line"></i></li>
                 <li><i class="ri-heart-line"></i></li>
                 <li class="sign"><i class="ri-user-3-line"></i> Sign In</li>
                 <li>
-                  <button>
-                    <i class="ri-shopping-basket-line"></i> Cart $ 0.00
+                  <button class="btn btn-dark">
+                    <i class="ri-shopping-basket-line"></i> Cart $0.00
                   </button>
                 </li>
               </ul>
             </div>
+            <i class="ri-menu-line hamburger d-xl-none ms-3"></i>
           </div>
         </div>
       </nav>
     </header>
+
+    <div class="mobile-menu">
+      <i class="ri-close-line close-mobile"></i>
+      <ul>
+        <li>Elements</li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li>Track Order</li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./about.html">About us.</a></li>
+        <li><a href="./contact.html">Contacts</a></li>
+        <li><i class="ri-search-line"></i></li>
+        <hr />
+        <li><i class="ri-refresh-line"></i> Refresh</li>
+        <li><i class="ri-heart-line"></i> Wishlist</li>
+        <li><i class="ri-user-3-line"></i> Sign In</li>
+        <li><i class="ri-shopping-basket-line"></i> Cart $0.00</li>
+      </ul>
+    </div>
     <section id="blogHero">
       <div class="container-fluid">
         <div class="breadcrumb">
@@ -294,7 +318,6 @@
               </div>
             </a>
           </div>
-   
         </div>
         <div class="line"></div>
         <div class="content">
