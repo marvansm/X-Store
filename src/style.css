@@ -2262,6 +2262,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #blogHero {
   padding: 0 150px;
 }
+@media (max-width: 1200px) {
+  #blogHero {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #blogHero {
+    padding: 0 30px;
+  }
+}
 #blogHero .heading {
   margin-top: 66px;
   display: flex;
@@ -2271,16 +2281,17 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   gap: 20px;
 }
 #blogHero .heading h1, #blogHero .heading #banner .bannerInfo .content h2, #banner .bannerInfo .content #blogHero .heading h2 {
-  color: #222222;
+  color: #222;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.3em;
+  text-align: center;
 }
 #blogHero .heading p {
   text-align: center;
   width: 55%;
-  color: #666666;
-  font-family: "Roboto", Sans-serif;
+  color: #666;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
@@ -2289,7 +2300,7 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   display: flex;
   align-items: center;
   font-size: 13px;
-  color: #666666;
+  color: #666;
   gap: 3px;
 }
 #blogHero .breadcrumb ul a:hover {
@@ -2306,36 +2317,14 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 }
 #blogHero .filter ul li select {
   font-size: 14px;
-  font-weight: normal;
   text-transform: uppercase;
-  line-height: 26px;
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #e1e1e1;
+  border: 1px solid #e1e1e1;
   padding: 6px 20px 6px 16px;
-  border-radius: 100px 100px 100px 100px;
-  width: 313.594px;
+  border-radius: 100px;
+  width: 313px;
   height: 40px;
   background-color: transparent;
   outline: none;
-}
-#blogHero .filter ul li select .yellow {
-  width: 30px;
-  height: 30px;
-  background-color: yellow;
-  border-radius: 50%;
-}
-#blogHero .filter ul li select .red {
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  border-radius: 50%;
-}
-#blogHero .filter ul li select .blue {
-  width: 30px;
-  height: 30px;
-  background-color: blue;
-  border-radius: 50%;
 }
 #blogHero .filter ul li button {
   display: flex;
@@ -2344,14 +2333,10 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   background-color: #2a74ed;
   font-size: 16px;
   font-weight: 500;
-  text-transform: none;
-  line-height: 28px;
-  fill: #fff;
   color: #fff;
-  border-style: solid;
-  border-width: 0px 0px 0px 0px;
-  border-radius: 100px 100px 100px 100px;
-  padding: 7px 85px 7px 85px;
+  border: none;
+  border-radius: 100px;
+  padding: 7px 85px;
   transition: 0.3s ease-in-out;
 }
 #blogHero .filter ul li button i {
@@ -2364,25 +2349,22 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #blogHero .discountDevice {
   width: 100%;
   margin-top: 26px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 85px 0px 65px 100px;
-  border-radius: 20px 20px 20px 20px;
+  padding: 85px 20px 65px 100px;
+  border-radius: 20px;
 }
 #blogHero .discountDevice ul {
   display: flex;
-  align-items: start;
-  justify-content: start;
   flex-direction: column;
   gap: 12px;
 }
 #blogHero .discountDevice ul li p {
   font-size: 12px;
-  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #444444;
+  color: #444;
 }
 #blogHero .discountDevice ul li h2 {
   font-size: 40px;
@@ -2390,24 +2372,93 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   line-height: 1.3em;
 }
 #blogHero .discountDevice ul li button {
-  border-style: solid;
-  border-width: 0px 0px 0px 0px;
-  border-color: #2a74ed;
   min-width: 165px;
   font-size: 16px;
   font-weight: bold;
-  text-transform: none;
-  fill: #ffffff;
-  color: #ffffff;
+  color: #fff;
   background-color: #2a74ed;
-  border-radius: 100px 100px 100px 100px;
-  padding: 15px 38px 15px 38px;
+  border-radius: 100px;
+  padding: 15px 38px;
+  border: none;
+}
+@media (max-width: 992px) {
+  #blogHero {
+    padding: 40px;
+  }
+  #blogHero .heading h1, #blogHero .heading #banner .bannerInfo .content h2, #banner .bannerInfo .content #blogHero .heading h2 {
+    font-size: 32px;
+  }
+  #blogHero .heading p {
+    width: 80%;
+    font-size: 16px;
+  }
+  #blogHero .discountDevice {
+    padding: 60px 20px;
+  }
+  #blogHero .discountDevice ul li h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  #blogHero .heading h1, #blogHero .heading #banner .bannerInfo .content h2, #banner .bannerInfo .content #blogHero .heading h2 {
+    font-size: 26px;
+  }
+  #blogHero .heading p {
+    width: 90%;
+    font-size: 15px;
+  }
+  #blogHero .filter ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blogHero .filter ul li {
+    width: 100%;
+  }
+  #blogHero .filter ul li select {
+    width: 100%;
+  }
+  #blogHero .filter ul li button {
+    width: 100%;
+    justify-content: center;
+  }
+  #blogHero .discountDevice {
+    padding: 40px 20px;
+  }
+  #blogHero .discountDevice ul li h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 480px) {
+  #blogHero .heading h1, #blogHero .heading #banner .bannerInfo .content h2, #banner .bannerInfo .content #blogHero .heading h2 {
+    font-size: 22px;
+  }
+  #blogHero .heading p {
+    font-size: 14px;
+    width: 100%;
+  }
+  #blogHero .discountDevice ul li h2 {
+    font-size: 22px;
+  }
+  #blogHero .filter ul li button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
 
 #blogs {
   padding: 0 150px;
   padding-bottom: 126px;
   padding-top: 32px;
+}
+@media (max-width: 1200px) {
+  #blogs {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #blogs {
+    padding: 0 30px;
+  }
 }
 #blogs .line {
   margin-top: 30px;
@@ -2443,7 +2494,7 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #blogs .box .boxBody ul {
   display: flex;
   align-items: center;
-  gap: 1px;
+  gap: 5px;
   margin-bottom: 20px;
 }
 #blogs .box .boxBody ul li {
@@ -2478,7 +2529,7 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #blogs .box .boxBody .review ul {
   display: flex;
   align-items: center;
-  gap: 1;
+  gap: 8px;
 }
 #blogs .box .boxBody .review ul li {
   display: flex;
@@ -2510,11 +2561,8 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   font-size: 16px;
   font-weight: 400;
   text-transform: none;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  border-style: none;
+  border-radius: 100px;
+  border: none;
   padding: 0.83rem 1.7rem;
   background-color: #2a74ed;
   color: white;
@@ -2522,6 +2570,55 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 }
 #blogs .content button:hover {
   background-color: black;
+}
+@media (max-width: 992px) {
+  #blogs {
+    padding: 40px;
+  }
+  #blogs .boxBody h2 {
+    font-size: 22px;
+  }
+  #blogs .boxBody h3 {
+    font-size: 16px;
+  }
+  #blogs .boxBody ul li {
+    font-size: 14px;
+  }
+  #blogs .boxBody .review {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  #blogs .content button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 768px) {
+  #blogs .boxBody h2 {
+    font-size: 20px;
+  }
+  #blogs .boxBody h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  #blogs {
+    padding: 20px;
+  }
+  #blogs .boxBody h2 {
+    font-size: 18px;
+  }
+  #blogs .boxBody h3 {
+    font-size: 14px;
+  }
+  #blogs .boxBody ul li {
+    font-size: 13px;
+  }
+  #blogs .content button {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
 }
 
 #ContactUs {

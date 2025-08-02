@@ -2,12 +2,20 @@
   padding: $nav-padding-desktop;
   padding-bottom: 126px;
   padding-top: 32px;
+  @media (max-width: 1200px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 30px;
+  }
   .line {
     margin-top: 30px;
     border-radius: 50px;
     border: 1px solid rgba(128, 128, 128, 0.205);
     width: 100%;
   }
+
   .box {
     width: 100%;
     cursor: grab;
@@ -40,13 +48,15 @@
       ul {
         display: flex;
         align-items: center;
-        gap: 1px;
+        gap: 5px;
         margin-bottom: 20px;
+
         li {
           color: #888;
           font-size: 15px;
         }
       }
+
       h2 {
         font-size: $article-title-size;
         font-weight: 500;
@@ -78,7 +88,7 @@
         ul {
           display: flex;
           align-items: center;
-          gap: 1;
+          gap: 8px;
 
           li {
             display: flex;
@@ -107,27 +117,90 @@
       }
     }
   }
+
   .content {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+
     button {
       font-size: 16px;
       font-weight: 400;
       text-transform: none;
-      border-top-left-radius: 100px;
-      border-top-right-radius: 100px;
-      border-bottom-right-radius: 100px;
-      border-bottom-left-radius: 100px;
-      border-style: none;
+      border-radius: 100px;
+      border: none;
       padding: 0.83rem 1.7rem;
       background-color: #2a74ed;
       color: white;
       transition: 0.3s ease-in-out;
+
       &:hover {
         background-color: black;
       }
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 40px;
+
+    .boxBody {
+      h2 {
+        font-size: 22px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+
+      ul li {
+        font-size: 14px;
+      }
+
+      .review {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+
+    .content button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .boxBody {
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 20px;
+
+    .boxBody {
+      h2 {
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+
+      ul li {
+        font-size: 13px;
+      }
+    }
+
+    .content button {
+      font-size: 13px;
+      padding: 8px 18px;
     }
   }
 }
