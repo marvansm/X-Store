@@ -22,50 +22,71 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
-    <header>
-      <nav class="container-fluid">
-        <div class="row align-items-center g-3">
-          <div class="col-xl-3">
-            <div class="logo">
-              <a href="./index.html">
-                <img
-                  src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Logo@2x.png"
-                  alt="logo"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="menu">
-              <ul>
-                <li>Elements</li>
-                <li><a href="./shop.html">Shop</a></li>
-                <li>Track Order</li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./about.html">About us</a></li>
-                <li><a href="./contact.html">Contacts</a></li>
-                <li><i class="ri-search-line"></i></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3">
-            <div class="actions">
-              <ul>
-                <li><i class="ri-refresh-line"></i></li>
-                <li><i class="ri-heart-line"></i></li>
-                <li class="sign"><i class="ri-user-3-line"></i> Sign In</li>
-                <li>
-                  <button>
-                    <i class="ri-shopping-basket-line"></i> Cart $ 0.00
-                  </button>
-                </li>
-              </ul>
-            </div>
-        
+   <header>
+    <nav class="container-fluid py-3">
+      <div class="row align-items-center g-3">
+        <div class="col-6 col-xl-3 d-flex align-items-center">
+          <div class="logo">
+            <a href="./index.html">
+              <img
+                src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Logo@2x.png"
+                alt="logo"
+                style="max-height: 40px;"
+              />
+            </a>
           </div>
         </div>
-      </nav>
-    </header>
+
+        <div class="col-xl-6 d-none d-xl-block">
+          <div class="menu">
+            <ul>
+              <li>Elements</li>
+              <li><a href="./shop.html">Shop</a></li>
+              <li>Track Order</li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./about.html">About us</a></li>
+              <li><a href="./contact.html">Contacts</a></li>
+              <li><i class="ri-search-line"></i></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 col-xl-3 d-flex justify-content-end align-items-center">
+          <div class="actions d-none d-xl-flex">
+            <ul>
+              <li><i class="ri-refresh-line"></i></li>
+              <li><i class="ri-heart-line"></i></li>
+              <li class="sign"><i class="ri-user-3-line"></i> Sign In</li>
+              <li>
+                <button class="btn btn-dark">
+                  <i class="ri-shopping-basket-line"></i> Cart $0.00
+                </button>
+              </li>
+            </ul>
+          </div>
+          <i class="ri-menu-line hamburger d-xl-none ms-3"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu">
+    <i class="ri-close-line close-mobile"></i>
+    <ul>
+      <li>Elements</li>
+      <li><a href="./shop.html">Shop</a></li>
+      <li>Track Order</li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./about.html">About us</a></li>
+      <li><a href="./contact.html">Contacts</a></li>
+      <li><i class="ri-search-line"></i></li>
+      <hr />
+      <li><i class="ri-refresh-line"></i> Refresh</li>
+      <li><i class="ri-heart-line"></i> Wishlist</li>
+      <li><i class="ri-user-3-line"></i> Sign In</li>
+      <li><i class="ri-shopping-basket-line"></i> Cart $0.00</li>
+    </ul>
+  </div>
     <main>
       <section id="banner">
         <div class="container-fluid">
@@ -644,235 +665,306 @@
           <div class="swiper mySwipper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="box">
-                  <div class="boxImg">
-                    <img
-                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
-                      alt=""
-                    />
-                    <div class="posElement">
-                      <ul>
-                        <li class="date">
-                          <span>20</span> <span class="month">Jan</span>
-                        </li>
-                        <li class="category">Controllers</li>
-                      </ul>
+                <a href="./blogDetail.html">
+                  <div class="box">
+                    <div class="boxImg">
+                      <img
+                        src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
+                        alt=""
+                      />
+                      <div class="posElement">
+                        <ul>
+                          <li class="date">
+                            <span>20</span> <span class="month">Jan</span>
+                          </li>
+                          <li class="category">Controllers</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="boxBody">
+                      <h2>Julie Schuster The Future Of Home Design</h2>
+                      <h3>
+                        Continue Reading
+                        <i class="ri-arrow-right-long-line"></i>
+                      </h3>
+                      <div class="line"></div>
+                      <div class="review">
+                        <ul>
+                          <li>
+                            <img
+                              src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
+                              alt="avatar"
+                            />
+                          </li>
+                          <li>
+                            <span>by</span>
+                            <p>Rose Tyler</p>
+                          </li>
+                        </ul>
+                        <ul class="right">
+                          <li>
+                            <i class="ri-calendar-todo-line"></i> January
+                            20,2022
+                          </li>
+                          <li><i class="ri-chat-4-line"></i> 0</li>
+                          <li><i class="ri-share-line"></i></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                  <div class="boxBody">
-                    <h2>Julie Schuster The Future Of Home Design</h2>
-                    <h3>
-                      Continue Reading <i class="ri-arrow-right-long-line"></i>
-                    </h3>
-                    <div class="line"></div>
-                    <div class="review">
-                      <ul>
-                        <li>
-                          <img
-                            src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
-                            alt="avatar"
-                          />
-                        </li>
-                        <li>
-                          <span>by</span>
-                          <p>Rose Tyler</p>
-                        </li>
-                      </ul>
-                      <ul class="right">
-                        <li>
-                          <i class="ri-calendar-todo-line"></i> January 20,2022
-                        </li>
-                        <li><i class="ri-chat-4-line"></i> 0</li>
-                        <li><i class="ri-share-line"></i></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="box">
-                  <div class="boxImg">
-                    <img
-                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
-                      alt=""
-                    />
-                    <div class="posElement">
-                      <ul>
-                        <li class="date">
-                          <span>20</span> <span class="month">Jan</span>
-                        </li>
-                        <li class="category">Controllers</li>
-                      </ul>
+                <a href="./blogDetail.html">
+                  <div class="box">
+                    <div class="boxImg">
+                      <img
+                        src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
+                        alt=""
+                      />
+                      <div class="posElement">
+                        <ul>
+                          <li class="date">
+                            <span>20</span> <span class="month">Jan</span>
+                          </li>
+                          <li class="category">Controllers</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="boxBody">
+                      <h2>Julie Schuster The Future Of Home Design</h2>
+                      <h3>
+                        Continue Reading
+                        <i class="ri-arrow-right-long-line"></i>
+                      </h3>
+                      <div class="line"></div>
+                      <div class="review">
+                        <ul>
+                          <li>
+                            <img
+                              src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
+                              alt="avatar"
+                            />
+                          </li>
+                          <li>
+                            <span>by</span>
+                            <p>Rose Tyler</p>
+                          </li>
+                        </ul>
+                        <ul class="right">
+                          <li>
+                            <i class="ri-calendar-todo-line"></i> January
+                            20,2022
+                          </li>
+                          <li><i class="ri-chat-4-line"></i> 0</li>
+                          <li><i class="ri-share-line"></i></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                  <div class="boxBody">
-                    <h2>Julie Schuster The Future Of Home Design</h2>
-                    <h3>
-                      Continue Reading <i class="ri-arrow-right-long-line"></i>
-                    </h3>
-                    <div class="line"></div>
-                    <div class="review">
-                      <ul>
-                        <li>
-                          <img
-                            src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
-                            alt="avatar"
-                          />
-                        </li>
-                        <li>
-                          <span>by</span>
-                          <p>Rose Tyler</p>
-                        </li>
-                      </ul>
-                      <ul class="right">
-                        <li>
-                          <i class="ri-calendar-todo-line"></i> January 20,2022
-                        </li>
-                        <li><i class="ri-chat-4-line"></i> 0</li>
-                        <li><i class="ri-share-line"></i></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="box">
-                  <div class="boxImg">
-                    <img
-                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
-                      alt=""
-                    />
-                    <div class="posElement">
-                      <ul>
-                        <li class="date">
-                          <span>20</span> <span class="month">Jan</span>
-                        </li>
-                        <li class="category">Controllers</li>
-                      </ul>
+                <a href="./blogDetail.html">
+                  <div class="box">
+                    <div class="boxImg">
+                      <img
+                        src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
+                        alt=""
+                      />
+                      <div class="posElement">
+                        <ul>
+                          <li class="date">
+                            <span>20</span> <span class="month">Jan</span>
+                          </li>
+                          <li class="category">Controllers</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="boxBody">
+                      <h2>Julie Schuster The Future Of Home Design</h2>
+                      <h3>
+                        Continue Reading
+                        <i class="ri-arrow-right-long-line"></i>
+                      </h3>
+                      <div class="line"></div>
+                      <div class="review">
+                        <ul>
+                          <li>
+                            <img
+                              src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
+                              alt="avatar"
+                            />
+                          </li>
+                          <li>
+                            <span>by</span>
+                            <p>Rose Tyler</p>
+                          </li>
+                        </ul>
+                        <ul class="right">
+                          <li>
+                            <i class="ri-calendar-todo-line"></i> January
+                            20,2022
+                          </li>
+                          <li><i class="ri-chat-4-line"></i> 0</li>
+                          <li><i class="ri-share-line"></i></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                  <div class="boxBody">
-                    <h2>Julie Schuster The Future Of Home Design</h2>
-                    <h3>
-                      Continue Reading <i class="ri-arrow-right-long-line"></i>
-                    </h3>
-                    <div class="line"></div>
-                    <div class="review">
-                      <ul>
-                        <li>
-                          <img
-                            src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
-                            alt="avatar"
-                          />
-                        </li>
-                        <li>
-                          <span>by</span>
-                          <p>Rose Tyler</p>
-                        </li>
-                      </ul>
-                      <ul class="right">
-                        <li>
-                          <i class="ri-calendar-todo-line"></i> January 20,2022
-                        </li>
-                        <li><i class="ri-chat-4-line"></i> 0</li>
-                        <li><i class="ri-share-line"></i></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="box">
-                  <div class="boxImg">
-                    <img
-                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
-                      alt=""
-                    />
-                    <div class="posElement">
-                      <ul>
-                        <li class="date">
-                          <span>20</span> <span class="month">Jan</span>
-                        </li>
-                        <li class="category">Controllers</li>
-                      </ul>
+                <a href="./blogDetail.html">
+                  <div class="box">
+                    <div class="boxImg">
+                      <img
+                        src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
+                        alt=""
+                      />
+                      <div class="posElement">
+                        <ul>
+                          <li class="date">
+                            <span>20</span> <span class="month">Jan</span>
+                          </li>
+                          <li class="category">Controllers</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="boxBody">
+                      <h2>Julie Schuster The Future Of Home Design</h2>
+                      <h3>
+                        Continue Reading
+                        <i class="ri-arrow-right-long-line"></i>
+                      </h3>
+                      <div class="line"></div>
+                      <div class="review">
+                        <ul>
+                          <li>
+                            <img
+                              src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
+                              alt="avatar"
+                            />
+                          </li>
+                          <li>
+                            <span>by</span>
+                            <p>Rose Tyler</p>
+                          </li>
+                        </ul>
+                        <ul class="right">
+                          <li>
+                            <i class="ri-calendar-todo-line"></i> January
+                            20,2022
+                          </li>
+                          <li><i class="ri-chat-4-line"></i> 0</li>
+                          <li><i class="ri-share-line"></i></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                  <div class="boxBody">
-                    <h2>Julie Schuster The Future Of Home Design</h2>
-                    <h3>
-                      Continue Reading <i class="ri-arrow-right-long-line"></i>
-                    </h3>
-                    <div class="line"></div>
-                    <div class="review">
-                      <ul>
-                        <li>
-                          <img
-                            src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
-                            alt="avatar"
-                          />
-                        </li>
-                        <li>
-                          <span>by</span>
-                          <p>Rose Tyler</p>
-                        </li>
-                      </ul>
-                      <ul class="right">
-                        <li>
-                          <i class="ri-calendar-todo-line"></i> January 20,2022
-                        </li>
-                        <li><i class="ri-chat-4-line"></i> 0</li>
-                        <li><i class="ri-share-line"></i></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="box">
-                  <div class="boxImg">
-                    <img
-                      src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
-                      alt=""
-                    />
-                    <div class="posElement">
-                      <ul>
-                        <li class="date">
-                          <span>20</span> <span class="month">Jan</span>
-                        </li>
-                        <li class="category">Controllers</li>
-                      </ul>
+                <a href="./blogDetail.html">
+                  <div class="box">
+                    <div class="boxImg">
+                      <img
+                        src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
+                        alt=""
+                      />
+                      <div class="posElement">
+                        <ul>
+                          <li class="date">
+                            <span>20</span> <span class="month">Jan</span>
+                          </li>
+                          <li class="category">Controllers</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="boxBody">
+                      <h2>Julie Schuster The Future Of Home Design</h2>
+                      <h3>
+                        Continue Reading
+                        <i class="ri-arrow-right-long-line"></i>
+                      </h3>
+                      <div class="line"></div>
+                      <div class="review">
+                        <ul>
+                          <li>
+                            <img
+                              src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
+                              alt="avatar"
+                            />
+                          </li>
+                          <li>
+                            <span>by</span>
+                            <p>Rose Tyler</p>
+                          </li>
+                        </ul>
+                        <ul class="right">
+                          <li>
+                            <i class="ri-calendar-todo-line"></i> January
+                            20,2022
+                          </li>
+                          <li><i class="ri-chat-4-line"></i> 0</li>
+                          <li><i class="ri-share-line"></i></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                  <div class="boxBody">
-                    <h2>Julie Schuster The Future Of Home Design</h2>
-                    <h3>
-                      Continue Reading <i class="ri-arrow-right-long-line"></i>
-                    </h3>
-                    <div class="line"></div>
-                    <div class="review">
-                      <ul>
-                        <li>
-                          <img
-                            src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
-                            alt="avatar"
-                          />
-                        </li>
-                        <li>
-                          <span>by</span>
-                          <p>Rose Tyler</p>
-                        </li>
-                      </ul>
-                      <ul class="right">
-                        <li>
-                          <i class="ri-calendar-todo-line"></i> January 20,2022
-                        </li>
-                        <li><i class="ri-chat-4-line"></i> 0</li>
-                        <li><i class="ri-share-line"></i></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                </a>
               </div>
+              <div class="swiper-slide">
+                <a href="./blogDetail.html">
+                  <div class="box">
+                    <div class="boxImg">
+                      <img
+                        src="https://xstore.8theme.com/elementor/demos/minimal-electronics/wp-content/uploads/sites/71/2022/02/Image_3-300x180.jpeg"
+                        alt=""
+                      />
+                      <div class="posElement">
+                        <ul>
+                          <li class="date">
+                            <span>20</span> <span class="month">Jan</span>
+                          </li>
+                          <li class="category">Controllers</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="boxBody">
+                      <h2>Julie Schuster The Future Of Home Design</h2>
+                      <h3>
+                        Continue Reading
+                        <i class="ri-arrow-right-long-line"></i>
+                      </h3>
+                      <div class="line"></div>
+                      <div class="review">
+                        <ul>
+                          <li>
+                            <img
+                              src="https://secure.gravatar.com/avatar/a6280f7f23013459511038e00886b0060b0f9988ce085a79d72abe097603402a?s=40&d=mm&r=g"
+                              alt="avatar"
+                            />
+                          </li>
+                          <li>
+                            <span>by</span>
+                            <p>Rose Tyler</p>
+                          </li>
+                        </ul>
+                        <ul class="right">
+                          <li>
+                            <i class="ri-calendar-todo-line"></i> January
+                            20,2022
+                          </li>
+                          <li><i class="ri-chat-4-line"></i> 0</li>
+                          <li><i class="ri-share-line"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
             </div>
           </div>
           <marquee width="100%" direction="left" height="200px">

@@ -81,3 +81,15 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true,
   });
 });
+
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeMobile = document.querySelector(".close-mobile");
+
+hamburger.addEventListener("click", () => {
+  mobileMenu.classList.add("open");
+});
+
+closeMobile.addEventListener("click", () => {
+  mobileMenu.classList.remove("open");
+});
