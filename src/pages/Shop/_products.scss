@@ -1,16 +1,28 @@
 #products {
   margin-top: 30px;
   padding: $nav-padding-desktop;
+
+  @media (max-width: 1200px) {
+    padding: 0 50px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 30px;
+  }
+
   .sort {
     display: flex;
     align-items: center;
-   
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+
     .left {
       ul {
         display: flex;
         align-items: center;
         gap: 20px;
+        flex-wrap: wrap;
+
         li {
           select {
             font-size: 14px;
@@ -18,85 +30,123 @@
             max-width: 170px;
             color: #888;
             height: 30px;
-            border: 1px solid #8888885d;
+            border: 1px solid rgba(136, 136, 136, 0.36);
             background: transparent;
             outline: none;
+            border-radius: 6px;
+            padding: 0 10px;
           }
+
           .ri-grid-fill {
             color: #2a74ed;
             font-size: 16px;
             border-right: 1px solid rgba(128, 128, 128, 0.466);
             padding-right: 10px;
+            cursor: pointer;
           }
+
           .ri-menu-2-fill {
             font-size: 16px;
             color: black;
+            cursor: pointer;
           }
         }
       }
     }
+
     .right {
       display: flex;
       align-items: center;
       gap: 10px;
+
       p {
         font-size: 18px;
+        margin: 0;
       }
+
       select {
         padding: 0 2.9em 0 1em;
         height: 30px;
         color: #888;
-        height: 30px;
-        border: 1px solid #8888885d;
+        border: 1px solid rgba(136, 136, 136, 0.36);
         background: transparent;
         outline: none;
+        border-radius: 6px;
       }
     }
   }
+
   .allProducts {
     margin-top: 15px;
     margin-bottom: 85px;
+
     .productBox {
       border: 1px solid #e5e5e5;
       border-radius: 20px;
       padding: 5px 5px 25px 5px;
+      transition: box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
 
       .boxPic {
         position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          border-radius: 20px;
+          transition: transform 0.3s ease;
+        }
+
+        &:hover img {
+          transform: scale(1.05);
+        }
+
         &:hover {
-          .posBtn {
-            button {
-              transform: translateY(0);
-              opacity: 1;
-              visibility: visible;
-            }
+          .posBtn button {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
           }
           .posIcon {
             opacity: 1;
           }
         }
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
+
         .posIcon {
           position: absolute;
           top: 10px;
           right: 10px;
           opacity: 0;
-          transition: 0.3s ease-in-out;
+          transition: opacity 0.3s ease;
+          cursor: pointer;
+
           i {
             font-size: 18px;
+            color: #888;
+            transition: color 0.3s ease;
+          }
+
+          &:hover i {
+            color: #2a74ed;
           }
         }
+
         .posBtn {
           position: absolute;
           width: 100%;
           bottom: 10px;
+          left: 0;
+
           button {
             transform: translateY(60%);
-            transition: 0.3s ease-in-out;
+            transition: transform 0.3s ease, opacity 0.3s ease;
             opacity: 0;
             visibility: hidden;
             display: flex;
@@ -104,30 +154,37 @@
             justify-content: center;
             width: 100%;
             border: none;
-            padding: 10px 10px;
+            padding: 10px;
             background-color: black;
             color: white;
             border-radius: 20px;
             font-size: 18px;
+            cursor: pointer;
           }
         }
       }
+
       .body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 10px 15px;
+
         h2 {
-          color: #222222;
+          color: #222;
           font-size: 16px;
           font-weight: 500;
           margin-bottom: 15px;
+          text-align: center;
         }
+
         p {
           margin-bottom: 10px;
-
-          color: #888888;
+          color: #888;
+          font-size: 14px;
         }
+
         .stars {
           margin-bottom: 10px;
           font-size: 1.3rem;
@@ -136,23 +193,84 @@
           gap: 2px;
           color: #fdd835;
         }
+
         h3 {
           margin-bottom: 15px;
+          font-weight: 600;
+          font-size: 18px;
+          color: #222;
         }
+
         button {
           font-size: 16px;
           font-weight: 700;
           text-transform: none;
-          border-radius: 100px 100px 100px 100px;
-          padding: 14px 30px 14px 30px;
+          border-radius: 100px;
+          padding: 14px 30px;
           background-color: #2a74ed;
-          fill: #ffffff;
-          color: #ffffff;
+          color: #fff;
           border: none;
-          transition: 0.3s ease-in-out;
+          transition: background-color 0.3s ease;
+          cursor: pointer;
+
           &:hover {
             background-color: black;
           }
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .sort {
+      flex-direction: column;
+      align-items: stretch;
+
+      .left ul {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        li {
+          max-width: 48%;
+        }
+      }
+
+      .right {
+        justify-content: flex-start;
+        margin-top: 15px;
+      }
+    }
+
+    .allProducts {
+      .productBox {
+        padding: 10px 10px 30px 10px;
+
+        .body {
+          h2 {
+            font-size: 14px;
+          }
+          p {
+            font-size: 13px;
+          }
+          h3 {
+            font-size: 16px;
+          }
+          button {
+            font-size: 14px;
+            padding: 12px 25px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sort {
+      .left ul {
+        li {
+          max-width: 100%;
         }
       }
     }

@@ -1857,6 +1857,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #hero {
   padding: 0 150px;
 }
+@media (max-width: 1200px) {
+  #hero {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #hero {
+    padding: 0 30px;
+  }
+}
 #hero .heading {
   margin-top: 66px;
   display: flex;
@@ -1866,29 +1876,35 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   gap: 20px;
 }
 #hero .heading h1, #hero .heading #banner .bannerInfo .content h2, #banner .bannerInfo .content #hero .heading h2 {
-  color: #222222;
+  color: #222;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.3em;
+  text-align: center;
 }
 #hero .heading p {
   text-align: center;
   width: 55%;
-  color: #666666;
+  color: #666;
   font-family: "Roboto", Sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
 }
+@media (max-width: 768px) {
+  #hero .heading p {
+    width: 100%;
+  }
+}
 #hero .breadcrumb ul {
   display: flex;
   align-items: center;
   font-size: 13px;
-  color: #666666;
+  color: #666;
   gap: 3px;
 }
 #hero .breadcrumb ul a:hover {
-  color: #888787;
+  color: #888;
 }
 #hero .filter {
   margin-top: 46px;
@@ -1899,38 +1915,34 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  #hero .filter ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+#hero .filter ul li {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #hero .filter ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 #hero .filter ul li select {
   font-size: 14px;
-  font-weight: normal;
   text-transform: uppercase;
   line-height: 26px;
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #e1e1e1;
+  border: 1px solid #e1e1e1;
   padding: 6px 20px 6px 16px;
-  border-radius: 100px 100px 100px 100px;
-  width: 313.594px;
+  border-radius: 100px;
+  width: 100%;
+  max-width: 313.594px;
   height: 40px;
   background-color: transparent;
   outline: none;
-}
-#hero .filter ul li select .yellow {
-  width: 30px;
-  height: 30px;
-  background-color: yellow;
-  border-radius: 50%;
-}
-#hero .filter ul li select .red {
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  border-radius: 50%;
-}
-#hero .filter ul li select .blue {
-  width: 30px;
-  height: 30px;
-  background-color: blue;
-  border-radius: 50%;
 }
 #hero .filter ul li button {
   display: flex;
@@ -1939,14 +1951,11 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   background-color: #2a74ed;
   font-size: 16px;
   font-weight: 500;
-  text-transform: none;
   line-height: 28px;
-  fill: #fff;
   color: #fff;
-  border-style: solid;
-  border-width: 0px 0px 0px 0px;
-  border-radius: 100px 100px 100px 100px;
-  padding: 7px 85px 7px 85px;
+  border: none;
+  border-radius: 100px;
+  padding: 7px 85px;
   transition: 0.3s ease-in-out;
 }
 #hero .filter ul li button i {
@@ -1956,19 +1965,41 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   background-color: black;
   color: white;
 }
+#hero .colors {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+#hero .colors li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+#hero .colors li.yellow {
+  background-color: yellow;
+}
+#hero .colors li.red {
+  background-color: red;
+}
+#hero .colors li.blue {
+  background-color: blue;
+}
 #hero .discountDevice {
   width: 100%;
   margin-top: 26px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 85px 0px 65px 100px;
-  border-radius: 20px 20px 20px 20px;
+  padding: 85px 30px 65px 100px;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  #hero .discountDevice {
+    padding: 40px 20px;
+  }
 }
 #hero .discountDevice ul {
   display: flex;
-  align-items: start;
-  justify-content: start;
   flex-direction: column;
   gap: 12px;
 }
@@ -1977,7 +2008,7 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #444444;
+  color: #444;
 }
 #hero .discountDevice ul li h2 {
   font-size: 40px;
@@ -1985,33 +2016,41 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   line-height: 1.3em;
 }
 #hero .discountDevice ul li button {
-  border-style: solid;
-  border-width: 0px 0px 0px 0px;
-  border-color: #2a74ed;
-  min-width: 165px;
+  background-color: #2a74ed;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
-  text-transform: none;
-  fill: #ffffff;
-  color: #ffffff;
-  background-color: #2a74ed;
-  border-radius: 100px 100px 100px 100px;
-  padding: 15px 38px 15px 38px;
+  border: none;
+  border-radius: 100px;
+  padding: 15px 38px;
 }
 
 #products {
   margin-top: 30px;
   padding: 0 150px;
 }
+@media (max-width: 1200px) {
+  #products {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #products {
+    padding: 0 30px;
+  }
+}
 #products .sort {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 #products .sort .left ul, #products .sort #Trends .right ul, #Trends #products .sort .right ul {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 #products .sort .left ul li select, #products .sort #Trends .right ul li select, #Trends #products .sort .right ul li select {
   font-size: 14px;
@@ -2019,19 +2058,23 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   max-width: 170px;
   color: #888;
   height: 30px;
-  border: 1px solid rgba(136, 136, 136, 0.3647058824);
+  border: 1px solid rgba(136, 136, 136, 0.36);
   background: transparent;
   outline: none;
+  border-radius: 6px;
+  padding: 0 10px;
 }
 #products .sort .left ul li .ri-grid-fill, #products .sort #Trends .right ul li .ri-grid-fill, #Trends #products .sort .right ul li .ri-grid-fill {
   color: #2a74ed;
   font-size: 16px;
   border-right: 1px solid rgba(128, 128, 128, 0.466);
   padding-right: 10px;
+  cursor: pointer;
 }
 #products .sort .left ul li .ri-menu-2-fill, #products .sort #Trends .right ul li .ri-menu-2-fill, #Trends #products .sort .right ul li .ri-menu-2-fill {
   font-size: 16px;
   color: black;
+  cursor: pointer;
 }
 #products .sort .right {
   display: flex;
@@ -2040,15 +2083,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 }
 #products .sort .right p {
   font-size: 18px;
+  margin: 0;
 }
 #products .sort .right select {
   padding: 0 2.9em 0 1em;
   height: 30px;
   color: #888;
-  height: 30px;
-  border: 1px solid rgba(136, 136, 136, 0.3647058824);
+  border: 1px solid rgba(136, 136, 136, 0.36);
   background: transparent;
   outline: none;
+  border-radius: 6px;
 }
 #products .allProducts {
   margin-top: 15px;
@@ -2058,9 +2102,27 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   border: 1px solid #e5e5e5;
   border-radius: 20px;
   padding: 5px 5px 25px 5px;
+  transition: box-shadow 0.3s ease;
+}
+#products .allProducts .productBox:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 #products .allProducts .productBox .boxPic {
   position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+#products .allProducts .productBox .boxPic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+#products .allProducts .productBox .boxPic:hover img {
+  transform: scale(1.05);
 }
 #products .allProducts .productBox .boxPic:hover .posBtn button {
   transform: translateY(0);
@@ -2070,30 +2132,31 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #products .allProducts .productBox .boxPic:hover .posIcon {
   opacity: 1;
 }
-#products .allProducts .productBox .boxPic img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 #products .allProducts .productBox .boxPic .posIcon {
   position: absolute;
   top: 10px;
   right: 10px;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 #products .allProducts .productBox .boxPic .posIcon i {
   font-size: 18px;
+  color: #888;
+  transition: color 0.3s ease;
+}
+#products .allProducts .productBox .boxPic .posIcon:hover i {
+  color: #2a74ed;
 }
 #products .allProducts .productBox .boxPic .posBtn {
   position: absolute;
   width: 100%;
   bottom: 10px;
+  left: 0;
 }
 #products .allProducts .productBox .boxPic .posBtn button {
   transform: translateY(60%);
-  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0;
   visibility: hidden;
   display: flex;
@@ -2101,27 +2164,31 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   justify-content: center;
   width: 100%;
   border: none;
-  padding: 10px 10px;
+  padding: 10px;
   background-color: black;
   color: white;
   border-radius: 20px;
   font-size: 18px;
+  cursor: pointer;
 }
 #products .allProducts .productBox .body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10px 15px;
 }
 #products .allProducts .productBox .body h2 {
-  color: #222222;
+  color: #222;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 15px;
+  text-align: center;
 }
 #products .allProducts .productBox .body p {
   margin-bottom: 10px;
-  color: #888888;
+  color: #888;
+  font-size: 14px;
 }
 #products .allProducts .productBox .body .stars {
   margin-bottom: 10px;
@@ -2133,21 +2200,63 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 }
 #products .allProducts .productBox .body h3 {
   margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #222;
 }
 #products .allProducts .productBox .body button {
   font-size: 16px;
   font-weight: 700;
   text-transform: none;
-  border-radius: 100px 100px 100px 100px;
-  padding: 14px 30px 14px 30px;
+  border-radius: 100px;
+  padding: 14px 30px;
   background-color: #2a74ed;
-  fill: #ffffff;
-  color: #ffffff;
+  color: #fff;
   border: none;
-  transition: 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 #products .allProducts .productBox .body button:hover {
   background-color: black;
+}
+@media (max-width: 768px) {
+  #products .sort {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #products .sort .left ul, #products .sort #Trends .right ul, #Trends #products .sort .right ul {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #products .sort .left ul li, #products .sort #Trends .right ul li, #Trends #products .sort .right ul li {
+    max-width: 48%;
+  }
+  #products .sort .right {
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+  #products .allProducts .productBox {
+    padding: 10px 10px 30px 10px;
+  }
+  #products .allProducts .productBox .body h2 {
+    font-size: 14px;
+  }
+  #products .allProducts .productBox .body p {
+    font-size: 13px;
+  }
+  #products .allProducts .productBox .body h3 {
+    font-size: 16px;
+  }
+  #products .allProducts .productBox .body button {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+}
+@media (max-width: 480px) {
+  #products .sort .left ul li, #products .sort #Trends .right ul li, #Trends #products .sort .right ul li {
+    max-width: 100%;
+  }
 }
 
 #blogHero {
