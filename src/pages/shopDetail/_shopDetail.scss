@@ -1,6 +1,12 @@
 #shopDetail {
   padding: $nav-padding-desktop;
+  @media (max-width: 1200px) {
+    padding: 0 50px;
+  }
 
+  @media (max-width: 768px) {
+    padding: 0 30px;
+  }
   .productt {
     margin-top: 54px;
     width: 100%;
@@ -379,7 +385,6 @@
   }
 
   .reviews {
-    
     background-color: #fff;
     border-radius: 8px;
   }

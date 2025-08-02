@@ -2624,6 +2624,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #ContactUs {
   padding: 0 150px;
 }
+@media (max-width: 1200px) {
+  #ContactUs {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #ContactUs {
+    padding: 0 30px;
+  }
+}
 #ContactUs .contactHero {
   margin-top: 50px;
   display: flex;
@@ -2692,6 +2702,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
   padding: 0 150px;
   margin-top: 34px;
 }
+@media (max-width: 1200px) {
+  #map {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #map {
+    padding: 0 30px;
+  }
+}
 #map iframe {
   width: 100%;
   height: 500px;
@@ -2703,6 +2723,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #message {
   padding: 0 150px;
   margin: 105px 0;
+}
+@media (max-width: 1200px) {
+  #message {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #message {
+    padding: 0 30px;
+  }
 }
 #message .forms {
   display: flex;
@@ -2769,6 +2799,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #aboutUs {
   padding: 0 150px;
 }
+@media (max-width: 1200px) {
+  #aboutUs {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #aboutUs {
+    padding: 0 30px;
+  }
+}
 #aboutUs .bannerBg {
   background-position: center;
   background-repeat: no-repeat;
@@ -2805,6 +2845,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #Experiences {
   padding: 0 150px;
   margin-top: 113px;
+}
+@media (max-width: 1200px) {
+  #Experiences {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #Experiences {
+    padding: 0 30px;
+  }
 }
 #Experiences .left ul, #Experiences #Trends .right ul, #Trends #Experiences .right ul {
   display: flex;
@@ -2851,6 +2901,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #OurMission {
   margin-top: 97px;
   padding: 0 150px;
+}
+@media (max-width: 1200px) {
+  #OurMission {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #OurMission {
+    padding: 0 30px;
+  }
 }
 #OurMission .left img, #OurMission #Trends .right img, #Trends #OurMission .right img {
   width: 100%;
@@ -2944,6 +3004,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #blogDetail {
   padding: 0 150px;
   margin-bottom: 102px;
+}
+@media (max-width: 1200px) {
+  #blogDetail {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #blogDetail {
+    padding: 0 30px;
+  }
 }
 #blogDetail .left, #blogDetail #Trends .right, #Trends #blogDetail .right {
   margin-top: 50px;
@@ -3193,6 +3263,16 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 
 #shopDetail {
   padding: 0 150px;
+}
+@media (max-width: 1200px) {
+  #shopDetail {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  #shopDetail {
+    padding: 0 30px;
+  }
 }
 #shopDetail .productt {
   margin-top: 54px;

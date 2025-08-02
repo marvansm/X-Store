@@ -1,5 +1,12 @@
 #map {
   padding: $nav-padding-desktop;
+    @media (max-width: 1200px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 30px;
+  }
   margin-top: 34px;
 
   iframe {
