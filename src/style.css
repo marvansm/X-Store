@@ -2927,4 +2927,446 @@ footer .sign .left .contact h2 span, footer .sign #Trends .right .contact h2 spa
 #blogDetail .comment-form form button:hover {
   background-color: white;
   color: black;
+}
+
+#shopDetail {
+  padding: 0 150px;
+}
+#shopDetail .productt {
+  margin-top: 54px;
+  width: 100%;
+}
+#shopDetail .productt .product-image {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.158);
+}
+#shopDetail .productt .product-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+#shopDetail .product-details {
+  margin-top: 54px;
+  flex: 2;
+  margin-left: 20px;
+}
+#shopDetail .product-details h1, #shopDetail .product-details #banner .bannerInfo .content h2, #banner .bannerInfo .content #shopDetail .product-details h2 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  color: rgb(34, 34, 34);
+}
+#shopDetail .product-details p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#shopDetail .product-details a {
+  text-decoration: none;
+  color: #555;
+  margin-right: 10px;
+}
+#shopDetail .product-details .rating {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+#shopDetail .product-details .rating i {
+  color: #fdd835;
+  font-size: 1.5rem;
+}
+#shopDetail .product-details .rating span {
+  color: rgb(34, 34, 34);
+  font-size: 15px;
+  margin-left: 10px;
+}
+#shopDetail .product-details .price {
+  margin-top: 20px;
+  color: rgb(187, 187, 187);
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 34px;
+}
+#shopDetail .product-details .viewers {
+  margin-top: 40px;
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-weight: 400;
+}
+#shopDetail .product-details .description {
+  margin-top: 10px;
+  color: rgb(119, 119, 119);
+  font-size: 18px;
+  line-height: 29px;
+}
+#shopDetail .product-details .quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+#shopDetail .product-details .quantity button {
+  border: none;
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: transparent;
+}
+#shopDetail .product-details .quantity .count {
+  width: 50px;
+  padding: 10px;
+  margin: 0 10px;
+}
+#shopDetail .product-details .quantity .add-to-cart {
+  min-width: 280px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  background-color: rgb(42, 116, 237);
+  padding: 18px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+#shopDetail .product-details .quantity .add-to-cart:hover {
+  background-color: black;
+  color: white;
+}
+#shopDetail .product-details .other-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+#shopDetail .product-details .other-actions button {
+  font-size: 17px;
+  border: none;
+  background-color: transparent;
+  fill: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+#shopDetail .product-details .other-actions button:hover {
+  background-color: #ddd;
+}
+#shopDetail .product-details .sku-categories {
+  margin-top: 20px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+#shopDetail .product-details .sku-categories p {
+  color: rgb(96, 96, 236);
+}
+#shopDetail .product-details .sku-categories p span {
+  font-weight: 400;
+  color: rgb(61, 61, 61);
+}
+#shopDetail .product-details .social-links {
+  margin-top: 20px;
+}
+#shopDetail .product-details .social-links i {
+  padding: 4px;
+  font-size: 20px;
+  color: gray;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#shopDetail .right {
+  margin-top: 50px;
+  position: sticky;
+  top: 0;
+}
+#shopDetail .right h2 {
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: none;
+  color: rgb(34, 34, 34);
+  font-size: 17px;
+}
+#shopDetail .right .lines {
+  margin: 15px 0;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.24);
+}
+#shopDetail .right .categories {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 35px;
+  margin-bottom: 20px;
+}
+#shopDetail .right .categories ul {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+#shopDetail .right .categories ul li {
+  color: #888;
+  transition: 0.3s ease-in-out;
+}
+#shopDetail .right .categories ul li span {
+  color: black;
+}
+#shopDetail .right .categories ul li:hover {
+  cursor: pointer;
+  color: black;
+}
+#shopDetail .right .best-selling {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 35px;
+  margin-bottom: 20px;
+}
+#shopDetail .right .best-selling .products {
+  display: flex;
+  align-items: start;
+  margin-bottom: 25px;
+}
+#shopDetail .right .best-selling .products img {
+  max-width: 5rem;
+  max-height: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+  width: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#shopDetail .right .best-selling .products .products-info h3 {
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: none;
+  color: rgb(34, 34, 34);
+}
+#shopDetail .right .best-selling .products .products-info .price {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #888;
+}
+#shopDetail .right .best-selling .products .products-info .price.discount {
+  text-decoration: line-through;
+  color: #777;
+}
+#shopDetail .right .best-selling .products .products-info .price.new-price {
+  color: rgb(120, 120, 252);
+}
+#shopDetail .right .shopNow {
+  padding: 45px 155px 45px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  height: 600px;
+}
+#shopDetail .right .shopNow h3 {
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.3em;
+  color: rgb(34, 34, 34);
+}
+#shopDetail .right .shopNow button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 27px;
+  text-transform: none;
+  border-radius: 100px;
+  border-style: none;
+  background-color: #2a74ed;
+  margin-top: 10px;
+  height: auto;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+#shopDetail .right .shopNow button:hover {
+  background-color: black;
+  color: white;
+}
+#shopDetail .desc {
+  margin-top: 161px;
+}
+#shopDetail .desc ul {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#shopDetail .desc ul li #home-tab, #shopDetail .desc ul li #profile-tab {
+  background-color: rgb(48, 120, 234);
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+}
+#shopDetail .desc .product-overview {
+  background-color: #fff;
+  border-radius: 8px;
+}
+#shopDetail .desc .overview {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 60px;
+}
+#shopDetail .desc .overview h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4em;
+  color: #222222;
+}
+#shopDetail .desc .overview h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+#shopDetail .desc .overview p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+#shopDetail .desc .overview img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+#shopDetail .desc .foot {
+  display: flex;
+  align-items: start;
+  gap: 60px;
+}
+#shopDetail .desc .foot h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4em;
+  color: #222222;
+}
+#shopDetail .desc .foot p {
+  line-height: 1.3;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #777777;
+}
+#shopDetail .desc .foot p span {
+  color: black;
+}
+#shopDetail .reviews {
+  background-color: #fff;
+  border-radius: 8px;
+}
+#shopDetail .review-summary {
+  margin-bottom: 40px;
+  text-align: center;
+}
+#shopDetail .review-summary h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+#shopDetail .review-summary .star-rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#shopDetail .review-summary .star-rating .star {
+  font-size: 24px;
+  color: #ccc;
+  margin-right: 5px;
+}
+#shopDetail .review-summary .star-rating .star.filled {
+  color: #f1c40f;
+}
+#shopDetail .review-summary p {
+  font-size: 16px;
+  color: #777;
+}
+#shopDetail .review-summary .rating-bar {
+  background-color: #eee;
+  border-radius: 5px;
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+}
+#shopDetail .review-summary .rating-bar .filled-bar {
+  background-color: #27ae60;
+  height: 100%;
+  border-radius: 5px;
+}
+#shopDetail .write-review h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+#shopDetail .write-review p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+#shopDetail .write-review form {
+  display: flex;
+  flex-direction: column;
+}
+#shopDetail .write-review form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+#shopDetail .write-review form input[type=text],
+#shopDetail .write-review form input[type=email],
+#shopDetail .write-review form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#shopDetail .write-review form .star-rating-input {
+  display: flex;
+  margin-bottom: 15px;
+}
+#shopDetail .write-review form .star-rating-input input[type=radio] {
+  display: none;
+}
+#shopDetail .write-review form .star-rating-input input[type=radio]:checked + label {
+  color: #f1c40f;
+}
+#shopDetail .write-review form .star-rating-input label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+  margin-right: 5px;
+}
+#shopDetail .write-review form .star-rating-input label:hover {
+  color: #f1c40f;
+}
+#shopDetail .write-review form button {
+  padding: 12px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#shopDetail .write-review form button:hover {
+  background-color: #555;
 }/*# sourceMappingURL=style.css.map */
